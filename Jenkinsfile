@@ -10,7 +10,7 @@ pipeline {
             steps {
                 sh 'npm -v'
                 sh 'node -v'
-                sh 'npx create-react-app my-app'
+                sh 'npm install'
             }
         }
     }
