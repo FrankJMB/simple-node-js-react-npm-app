@@ -9,6 +9,8 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'npm -v'
+                sh 'apk add --update npm'
+                sh 'npm -v'
                 sh 'npm cache clean -f'
                 sh 'npm install -g npm@latest'
                 sh 'npm install strip-ansi --save'
