@@ -8,9 +8,11 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                sh 'npm -v'
                 sh 'npm cache clean -f'
+                sh 'npm install -g npm@latest'
+                sh 'npm -v'
                 sh 'npm install -g n@latest'
-                sh '/usr/local/bin/n latest'
                 sh 'npm install -g npx'
                 sh 'npx create-react-app my-app'
             }
