@@ -9,7 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'npm -v'
-                sh 'apk add --update nodejs nodejs-npm'
+                sh 'apk add nodejs-current'
                 sh 'npm -v'
             }
         }
