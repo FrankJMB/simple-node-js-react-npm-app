@@ -8,6 +8,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                sh 'npm cache clean -f'
+                sh 'npm install -g n'
+                sh 'n stable'
                 sh 'npm install -g npx'
                 sh 'npx create-react-app my-app'
             }
