@@ -9,14 +9,8 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'npm -v'
-                sh 'apk add --update npm'
+                sh 'apk add --update nodejs nodejs-npm'
                 sh 'npm -v'
-                sh 'npm cache clean -f'
-                sh 'npm install -g npm@latest'
-                sh 'npm install strip-ansi --save'
-                sh 'npm -v'
-                sh 'npm install -g npx'
-                sh 'npx create-react-app my-app'
             }
         }
     }
