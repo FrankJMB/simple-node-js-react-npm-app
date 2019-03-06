@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npx create-react-app my-app'
+                sh 'npm install -g npx'
             }
         }
     }
