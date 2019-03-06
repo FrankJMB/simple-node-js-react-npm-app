@@ -10,7 +10,7 @@ pipeline {
             steps {
                 sh 'npm cache clean -f'
                 sh 'npm install -g n@latest'
-                sh 'n latest'
+                sh '/usr/local/bin/n latest'
                 sh 'npm install -g npx'
                 sh 'npx create-react-app my-app'
             }
