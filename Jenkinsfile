@@ -15,6 +15,7 @@ pipeline {
                 sh 'pwd'
                 sh 'whoami'
                 sh 'echo $HOME'
+                sh 'npm install'
             }
         }
     }
