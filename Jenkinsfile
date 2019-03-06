@@ -14,6 +14,7 @@ pipeline {
                 sh 'npm -v'
                 sh 'pwd'
                 sh 'whoami'
+                sh 'echo $HOME'
             }
         }
     }
