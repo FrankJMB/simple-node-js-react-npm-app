@@ -11,7 +11,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm install -g'
+                sh 'cd /root'
+                sh 'npm install'
             }
         }
         stage('Deliver') {
