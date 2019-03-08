@@ -1,5 +1,6 @@
 pwd
-cp package.json /root
+cp -R * /root
+rm package.json
 cd /root
 pwd
 npm install
