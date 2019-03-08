@@ -12,7 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'cd /root'
-                sh 'npm install'
+                sh 'pwd'
             }
         }
         stage('Deliver') {
