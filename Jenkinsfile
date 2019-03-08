@@ -8,6 +8,7 @@ pipeline {
     environment {
         CI = 'true'
     }
+    stages {
         stage('Build') {
             steps {
                 sh './jenkins/scripts/ttt.sh'
@@ -25,4 +26,5 @@ pipeline {
                 sh './jenkins/scripts/kill.sh'
             }
         }
+    }
 }
