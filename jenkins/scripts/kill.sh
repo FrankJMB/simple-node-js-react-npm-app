@@ -9,4 +9,4 @@ kill $(cat .pidfile)
 
 npm cache clean
 rm -Rf ./node_modules
-cp -aR * $WORKSPACE
+yes | cp -aRf * $WORKSPACE
