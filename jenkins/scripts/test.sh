@@ -18,5 +18,5 @@ echo 'application renders satisfactorily. This command actually invokes the test
 echo 'runner Jest (https://facebook.github.io/jest/).'
 set -x
 cd /root
-# npm cache clean
+npm cache clean
 npm test
