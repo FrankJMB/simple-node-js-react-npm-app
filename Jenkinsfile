@@ -14,5 +14,10 @@ pipeline {
                 sh './jenkins/scripts/ttt.sh'
             }
         }
+        stage('Deliver') {
+            steps {
+                input message: 'Finished using the web site? (Click "Proceed" to continue)'
+            }
+        }
     }
 }
