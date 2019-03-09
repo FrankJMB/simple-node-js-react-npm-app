@@ -1,13 +1,9 @@
 pwd
 whoami
-pwd
-ls -alt ./jenkins/scripts
-cd ./jenkins/scripts
-ls -alt
-chmod 755 ./ttt.sh
-cd ../..
 cp -R * /root
 rm package.json
 cd /root
+chmod 755 ./jenkins/scripts/ttt.sh
+ls -al ./jenkins/scripts/
 pwd
 npm install
