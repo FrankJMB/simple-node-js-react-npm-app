@@ -11,6 +11,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                input message: 'Finished using the web site? (Click "Proceed" to continue)'
                 sh './jenkins/scripts/ttt.sh'
             }
         }
