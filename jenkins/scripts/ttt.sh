@@ -2,6 +2,7 @@
 
 pwd
 whoami
+npm list -l
 cp -R * /root
 rm package.json
 cd /root
