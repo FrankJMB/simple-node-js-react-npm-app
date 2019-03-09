@@ -11,14 +11,15 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                input message: 'Finished using the web site? (Click "Proceed" to continue)'
+                input message: '1 Finished using the web site? (Click "Proceed" to continue)'
                 sh './jenkins/scripts/ttt.sh'
             }
         }
         stage('Test') {
             steps {
-                input message: 'Finished using the web site? (Click "Proceed" to continue)'
+                input message: '2 Finished using the web site? (Click "Proceed" to continue)'
                 sh './jenkins/scripts/test.sh'
+                input message: '3 Finished using the web site? (Click "Proceed" to continue)'
             }
         }
     }

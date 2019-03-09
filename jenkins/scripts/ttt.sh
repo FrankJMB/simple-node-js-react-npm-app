@@ -1,4 +1,5 @@
 pwd
+chmod 755 ./jenkins/scripts/ttt.sh
 cp -R * /root
 rm package.json
 cd /root
