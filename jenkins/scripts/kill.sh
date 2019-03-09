@@ -6,3 +6,7 @@ echo 'was executed.'
 set -x
 cd /root
 kill $(cat .pidfile)
+
+npm cache clean
+rm -Rf ./node_modules
+cp -aR * $WORKSPACE
