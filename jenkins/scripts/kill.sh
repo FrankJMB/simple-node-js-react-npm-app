@@ -7,6 +7,4 @@ set -x
 cd /root
 kill $(cat .pidfile)
 
-npm cache clean
-rm -Rf ./node_modules
-yes | cp -aRf * $WORKSPACE
+cp -aRf build $WORKSPACE
