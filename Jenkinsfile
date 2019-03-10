@@ -12,6 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh './jenkins/scripts/ttt.sh'
+                input message: 'Finished Build (Click "Proceed" to continue)'
             }
         }
         stage('Test') {
