@@ -9,6 +9,7 @@ set -x
 cd /root
 # npm run build
 npm install --save gh-pages
+npm config --list
 npm run deploy
 set +x
 
