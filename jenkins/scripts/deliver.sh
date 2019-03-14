@@ -7,7 +7,9 @@ echo 'correctly bundles React in production mode and optimizes the build for'
 echo 'the best performance.'
 set -x
 cd /root
-npm run build
+# npm run build
+npm install --save gh-pages
+npm run deploy
 set +x
 
 echo 'The following "npm" command runs your Node.js/React application in'
